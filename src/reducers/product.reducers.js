@@ -1,28 +1,9 @@
-import {productConstants} from '../actions/constants'
-
-// const initState= {
-//     products: [],
-//     productsByPrice: {
-//         under5k:[],
-//         under10k:[],
-//         under15k:[],
-//         under20k:[],
-//         under30k:[]
-//     },
-//       pageRequest: false,
-//   page: {},
-// }
+import { productConstants } from "../actions/constants";
 
 const initState = {
   products: [],
   priceRange: {},
-  productsByPrice: {
-    under5k:[],
-    under10k:[],
-    under15k:[],
-    under20k:[],
-    under30k:[]
-},
+  productsByPrice: {},
   pageRequest: false,
   page: {},
   error: null,

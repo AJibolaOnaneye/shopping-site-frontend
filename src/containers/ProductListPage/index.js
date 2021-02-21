@@ -5,6 +5,7 @@ import Layout from "../../components/Layout";
 // import { generatePublicUrl } from "../../urlConfig";
 import "./style.css";
 
+import ClothingAndAccessories from "./ClothingAndAccessories";
 import getParams from "../../utils/getParams";
 import ProductPage from "./ProductPage";
 import ProductStore from "./ProductStore";
@@ -28,7 +29,7 @@ const ProductListPage = (props) => {
         content = <ProductPage {...props} />;
         break;
       default:
-        // content = <ClothingAndAccessories {...props} />;
+        content = <ClothingAndAccessories {...props} />;
     }
 
     return content;
